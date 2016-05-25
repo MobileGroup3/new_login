@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.backendless.hk3.login.kitchen.CreateKitchen;
-
 public class RegistrationSuccessActivity extends Activity
 {
   private TextView messageView;

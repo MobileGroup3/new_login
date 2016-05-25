@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import com.backendless.Backendless;
 import com.backendless.exceptions.BackendlessFault;
-import com.backendless.hk3.login.kitchen.CreateKitchen;
+import com.backendless.hk3.login.kitchen.CreateKitchenActivity;
 
 public class LoginSuccessActivity extends Activity
 {
@@ -41,7 +41,7 @@ public class LoginSuccessActivity extends Activity
           @Override
           public void onClick( View view )
           {
-              oCreateButtonClicked();
+              onCreateButtonClicked();
           }
       } );
 
@@ -49,8 +49,8 @@ public class LoginSuccessActivity extends Activity
   }
 
 
-    private void oCreateButtonClicked(){
-        startActivity(new Intent(LoginSuccessActivity.this, CreateKitchen.class));
+    private void onCreateButtonClicked(){
+        startActivity(new Intent(LoginSuccessActivity.this, CreateKitchenActivity.class));
         finish();
     }
   private void onLogoutButtonClicked()

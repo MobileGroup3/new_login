@@ -1,19 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/zini/Desktop/HK3-Codegen_updated/libs/backendless.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="989dd1ff2acebf2c6f9df8e2b247e00b4757dfe5">
-        <dex dex="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/intermediates/pre-dexed/debug/backendless_e0351de586da4237305aaf41ac06ef0240b5a9c1.jar" />
-    </item>
-    <item
-        jar="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/libs/PhotoUtil.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="caf49e92eae4ca2805d530a92cb4777c1ef53f53">
-        <dex dex="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/intermediates/pre-dexed/debug/PhotoUtil_c099d0c7e666c9645732ba9570f152f664f63cc8.jar" />
-    </item>
-
-</items>
+<items version="2" />

@@ -1,6 +1,7 @@
 package com.backendless.hk3.login.kitchen;
 
-import android.content.Context;
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,15 +21,12 @@ import java.util.List;
 public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder>{
 
     private List<DishItem> dishItemList;
-    private Context context;
+    private Activity activity;
 
-    public DishAdapter (Context context, List<DishItem>dishItemList){
-        this.context=context;
+    public DishAdapter (Activity a, List<DishItem>dishItemList){
+        this.activity=a;
         this.dishItemList=dishItemList;
     }
-
-
-
 
      class MyViewHolder extends RecyclerView.ViewHolder{
         ImageView dishImageView;
@@ -36,6 +34,7 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder>{
          TextView dishDescriptionTextView;
          TextView dishPriceTextView;
          TextView dishRemainingNumberTextView;
+         ImageView editButton;
 
          public MyViewHolder(final View itemView){
              super(itemView);
@@ -44,14 +43,8 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder>{
              dishDescriptionTextView = (TextView) itemView.findViewById(R.id.text_view_dish_description);
              dishPriceTextView = (TextView) itemView.findViewById(R.id.text_view_dish_price);
              dishRemainingNumberTextView = (TextView) itemView.findViewById(R.id.text_view_remaining_number);
+             editButton = (ImageView) itemView.findViewById(R.id.editDish);
 
-         }
-
-         void bind(final DishItem dish){
-             dishNameTextView.setText(dish.getName());
-             dishDescriptionTextView.setText(dish.getDescription());
-             dishPriceTextView.setText(String.valueOf(dish.getPrice()));
-             dishRemainingNumberTextView.setText(String.valueOf(dish.getMax_num()));
          }
 
     }
@@ -69,8 +62,20 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder>{
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position){
-        DishItem dish=dishItemList.get(position);
-        Picasso.with(context).load(dish.getPrice()).into(holder.dishImageView);
+        final DishItem dish=dishItemList.get(position);
+        Picasso.with(activity).load(dish.getPicture()).into(holder.dishImageView);
+        holder.dishNameTextView.setText(dish.getName());
+        holder.dishDescriptionTextView.setText(dish.getDescription());
+        holder.dishPriceTextView.setText(String.valueOf(dish.getPrice()));
+        holder.dishRemainingNumberTextView.setText(String.valueOf(dish.getMax_num()));
+        holder.editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(activity, CreateOrEditDishActivity.class);
+                i.putExtra("dishItemId", dish.getObjectId());
+                activity.startActivityForResult(i, KitchenHomeActivity.EDIT_DISH_ITEM);
+            }
+        });
     }
 
     public void setData(List<DishItem> list){

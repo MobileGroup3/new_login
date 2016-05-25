@@ -14,7 +14,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <application android:label="@string/app_name" >
+    <application
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
         <activity
             android:name="com.backendless.hk3.login.LoginActivity"
             android:label="@string/app_name" >
@@ -29,7 +31,9 @@
         <activity android:name="com.backendless.hk3.login.RegistrationSuccessActivity" />
         <activity android:name="com.backendless.hk3.login.RestorePasswordActivity" />
         <activity android:name="com.backendless.hk3.login.LoginSuccessActivity" />
-        <activity android:name="com.backendless.hk3.login.kitchen.CreateKitchen" />
+        <activity android:name="com.backendless.hk3.login.kitchen.CreateKitchenActivity" />
+        <activity android:name="com.backendless.hk3.login.kitchen.CreateDishActivity" />
+        <activity android:name="com.backendless.hk3.login.kitchen.KitchenHomeActivity" />
 
         <service android:name="com.backendless.AndroidService" />
     </application>

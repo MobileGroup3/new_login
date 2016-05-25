@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="420dpi"
+    format="7"
+    timestamp="41057469426399" >
+
+    <task
+        name="javac"
+        duration="748" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="60" />
+    <task
+        name="verifier"
+        duration="12" />
+
+    <artifact
+        location="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+        type="DEX" />
+
+    <build timestamp="39812909071043" >
+        <artifact
+            location="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/outputs/apk/HK3-Login-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="40812747092163" >
+        <artifact
+            location="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="41057469426399" >
+        <artifact
+            location="/Users/zini/Desktop/HK3-Codegen_updated/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
