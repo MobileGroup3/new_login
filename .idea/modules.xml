@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HK3-Codegen_updated.iml" filepath="$PROJECT_DIR$/HK3-Codegen_updated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HK3-Data/HK3-Data.iml" filepath="$PROJECT_DIR$/HK3-Data/HK3-Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HK3-Login/HK3-Login.iml" filepath="$PROJECT_DIR$/HK3-Login/HK3-Login.iml" />
+    </modules>
+  </component>
+</project>

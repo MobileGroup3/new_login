@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.backendless.hk3.login"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage', 'OnClick'
+    }
+}
+
+dependencies {
+    //compile 'com.backendless:android:1.0'
+    compile fileTree(include: ['*.jar'], dir: '../libs')
+    compile files('libs/PhotoUtil.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.backendless:backendless:3.0.8.2'
+
+}

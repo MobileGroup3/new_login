@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dishName"
+        android:id="@+id/dishName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:layout_alignBottom="@+id/dishName"
+        android:layout_toRightOf="@+id/dishName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/price"
+        android:id="@+id/price"
+        android:layout_below="@+id/dishName"
+        android:layout_alignLeft="@+id/dishName"
+        android:layout_alignStart="@+id/dishName"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/quantity"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/price"
+        android:layout_alignLeft="@+id/price"
+        android:layout_alignStart="@+id/price"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/description"
+        android:id="@+id/description"
+        android:layout_below="@+id/quantity"
+        android:layout_alignLeft="@+id/quantity"
+        android:layout_alignStart="@+id/quantity"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/description"
+        android:layout_toRightOf="@+id/description"
+        android:layout_alignRight="@+id/nameText"
+        android:layout_alignEnd="@+id/nameText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/imgupload"
+        android:id="@+id/imgupload"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/description"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dishUpload"
+        android:id="@+id/dishUpload"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_above="@+id/dishImg"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dishImg"
+        android:layout_below="@+id/imgupload"
+        android:layout_alignLeft="@+id/imgupload"
+        android:layout_alignStart="@+id/imgupload"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/priceText"
+        android:layout_above="@+id/quantity"
+        android:layout_toRightOf="@+id/dishName"
+        android:layout_alignRight="@+id/nameText"
+        android:layout_alignEnd="@+id/nameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/quantityText"
+        android:layout_alignBottom="@+id/quantity"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_alignRight="@+id/priceText"
+        android:layout_alignEnd="@+id/priceText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitButton"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/dishImg"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

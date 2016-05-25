@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HK3-Login</string>
+    <string name="login_success_message">Login successful! This concludes an example.</string>
+    <string name="login_text">Log in</string>
+    <string name="logout_text">Log out</string>
+                                    
+    <string name="register_text">Register</string>
+    <string name="restore_link">restore</string>
+    <string name="password_recovered_message">We sent an email to your email address with a link to a password change page. Please check your email and follow the link for further instructions.</string>
+    <string name="restore_password_page_name">Password Restoration</string>
+    <string name="registration_page_name">Registration</string>
+    <string name="login_prompt">Login:</string>
+    <string name="password_prompt">Password:</string>
+    <string name="password_recovery_page_name">Password Recovery</string>
+    <string name="warning_icon_description">warning icon</string>
+    <string name="remember_login_text">Remember me</string>
+    <string name="startKitchen">Create Kitchen</string>
+                                        
+    <string name="email_field_prompt">Email:</string>
+                                        
+    <string name="is_k_owner_field_prompt">Is_k_owner:</string>
+                                        
+    <string name="name_field_prompt">Name:</string>
+                                        
+    <string name="password_field_prompt">Password:</string>
+                                        
+    <string name="default_registered_text">Registered successfully!</string>
+                                        
+    <string name="registration_success_message">Thank you for registering with the %1$s. Click the button below to proceed to the login.</string>
+    <string name="kitchenName">Kitchen Name</string>
+    <string name="phoneNo">Phone</string>
+    <string name="phone">Phone</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="category">Category</string>
+    <string name="imageUpload">Homepage Image</string>
+    <string name="uploadButton">Upload</string>
+    <string name="createKitchen">Create</string>
+    <string name="facebook">Facebook</string>
+    <string name="dishName">Name</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="imgupload">Image</string>
+    <string name="dishUpload">Upload</string>
+    <string name="submitButton">Submit</string>
+
+
+</resources>
